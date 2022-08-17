@@ -5,20 +5,6 @@
 export function init(Constants) {
     Constants.AvatarNames = ["newwhite"];
 
-    /* Alternatively, you can specify a card spec for an avatar,
-       instead of a string for the partical file name, to create your own avatar.
-       You can add behaviorModules here. Also, if the system detects a behavior module
-       named AvatarEventHandler, that is automatically installed to the avatar.
-        {
-            type: "3d",
-            modelType: "glb",
-            name: "rabbit",
-            dataLocation: "./assets/avatars/newwhite.zip",
-            dataRotation: [0, Math.PI, 0],
-            dataScale: [0.3, 0.3, 0.3],
-        }
-    */
-
     Constants.UserBehaviorDirectory = "behaviors/default";
     Constants.UserBehaviorModules = [
         "lights.js"
@@ -27,15 +13,31 @@ export function init(Constants) {
     Constants.DefaultCards = [
         {
             card: {
+                name: "entrance",
+                type: "object",
+                translation: [-10, 0, 0],
+                rotation: [0, -Math.PI / 2, 0],
+                spawn: "default",
+            }
+        },
+       {
+            card: {
                 name:"world model",
                 layers: ["walk"],
                 type: "3d",
                 singleSided: true,
                 shadow: true,
                 translation:[0, -1.7, 0],
+
+                fileName: "scifi.glb",
+                modelType: "glb",
+                dataLocation: "3y8lwrMGNTMf6mP6dqIpwSSkXJWxlb-adEMdxlxaabswEQ0NCQpDVlYfEBUcClcMClcaCxYIDBwNVxAWVgxWAywNDik2Az8MNipIMhAeNCMQTEpAAT89PkFJS1YQFlcaCxYIDBwNVxQQGgsWDxwLChxXFRYaGBUdHA8dHB8YDBUNViEYT1QWTyBMASlPEzpLGEw6FwtAERgJPRU1Hx8dOhVMDjgWPi8IQDoKFCxWHRgNGFY1SCwAFDwYFC80JggqEj4pARsxP0gdHzoODUhOG0tBMQ01TCAUADAmLDoS",
+                license: "CC-BY-4.0",
+                attribution: "'Sci-fi neon model' (https://skfb.ly/6YvXI) by ni_and_ka is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).",
+
                 placeholder: true,
                 placeholderSize: [400, 0.1, 400],
-                placeholderColor: 0x808080,
+                placeholderColor: 0x000000,
                 placeholderOffset: [0, 0, 0],
             }
         },
@@ -45,8 +47,10 @@ export function init(Constants) {
                 layers: ["light"],
                 type: "lighting",
                 behaviorModules: ["Light"],
-                dataLocation: "3OF2-s4U1ZOJduGATmLEIXo1iTkQHd5ZBknKgL5SvqpQJzs7Pzx1YGApJiMqPGE6PGEsPSA-Oio7YSYgYDpgCCsZLTYjBjwOJB4sDRcrfAg3Ljk2OBoEGBYWfWAmIGEsPSA-Oio7YSImLD0gOSo9PCpgPwB9AAIIISx8YiYneScqKyQaIisNLHkaGT8YKg56JQwQfHstPiNiGQ49e2ArLjsuYCMBPgMiCQt3OQskGhcleSp9HQIIfXseHgo7EAo9CB48FRwpegsCLH4OIwY",
-                fileName: "/abandoned_parking_4k.jpg",
+                dataLocation: "3UoyVp3L6NLANRNTBphxSLyYfyumS0av5-hBLBTTBx0kPSEhJSZvenozPDkwJnsgJns2JzokIDAhezw6eiB6LwAhIgUaLxMgGgZkHjwyGA88YGZsLRMREm1lZ3o8Ons2JzokIDAhezg8Nic6IzAnJjB7OTo2NDkxMCMxMDM0IDkheg00Y3g6YwxgLQVjPxZnNGAWOydsPTQlETkZMzMxFjlgIhQ6EgMkbBYmOAB6MTQhNHpjOBgBJy0cASAiHx8vAAI4ICMgByYEPw0UH2M7GBs3AWAAHi8aEAwfLz1h",
+                fileName: "/ESO_-_Milky_Way.jpg",
+                license: "CC-BY-4.0",
+                attribution: "ESO Milky Way (https://commons.wikimedia.org/wiki/File:ESO_-_Milky_Way.jpg) by ESO/S. Brunier is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).",
                 dataType: "jpg",
             }
         },
