@@ -7,7 +7,8 @@ export function init(Constants) {
 
     Constants.UserBehaviorDirectory = "behaviors/default";
     Constants.UserBehaviorModules = [
-        "lights.js"
+        "lights.js",
+        "bloompass.js",
     ];
 
     Constants.DefaultCards = [
@@ -25,8 +26,9 @@ export function init(Constants) {
                 name:"world model",
                 layers: ["walk"],
                 type: "3d",
+                behaviorModules: ["BloomPass"],
                 singleSided: true,
-                shadow: true,
+                shadow: false,
                 translation:[0, -1.7, 0],
 
                 fileName: "scifi.glb",
