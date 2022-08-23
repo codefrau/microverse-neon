@@ -1,4 +1,3 @@
-/* Copy this into a file named apiKey.js */
-const apiKey = '1_yo5yrgo0tboo77rkcpoizjl1xn7dqdte9rlv40pv';
-const appId = 'io.croquet.vanessa.microverse';
+const apiKey = '1kgms7tux56GK7hp2x98qJvON5HtAEN7xEe9B93Co';
+const appId = 'net.codefrau.vanessa.microverse.neon';
 export default {apiKey, appId};
