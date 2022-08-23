@@ -1,3 +1,3 @@
-const apiKey = '1kgms7tux56GK7hp2x98qJvON5HtAEN7xEe9B93Co';
-const appId = 'net.codefrau.vanessa.microverse.neon';
+const apiKey = '1EymdxqoBvs0nhiGKdmBMeE3HdyB6dGBx0P9J9fj8';
+const appId = 'io.github.codefrau.microverse.neon';
 export default {apiKey, appId};
